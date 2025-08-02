@@ -25,7 +25,7 @@ async def main():
         response = await client.fetch_data()
         dt_local = datetime.datetime.fromtimestamp(response.lastUpdate / 1000)
         print("Initial load:")
-        print(f"  Last Update: {dt_local.strftime("%Y-%m-%d %H:%M:%S")}")
+        print(f"  Last Update: {dt_local.strftime('%Y-%m-%d %H:%M:%S')}")
         print("  Full Status:")
         print(f"    outputPower:     {response.status.outputPower} W")
         print(f"    outputLoadLevel: {response.status.outputLoadLevel} %")
@@ -41,7 +41,7 @@ async def main():
             # Now simulate a second call with a patch update.
             print("Fetching patch update...")            
             print("After patch update:")
-            print(f"  Last Update: {dt_local.strftime("%Y-%m-%d %H:%M:%S")}")
+            print(f"  Last Update: {dt_local.strftime('%Y-%m-%d %H:%M:%S')}")
             print("  Updated Status:")
             print(f"    outputPower:     {response.status.outputPower} W")
             print(f"    outputLoadLevel: {response.status.outputLoadLevel} %")
