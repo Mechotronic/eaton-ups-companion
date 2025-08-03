@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from typing import Dict, Any, List
-from . import EcoControl, VoltageRange
 
 @dataclass
 class DeviceInfo:
